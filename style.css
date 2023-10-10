@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  width: 75%;
+  height: 8rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.bar {
+  width: 2rem;
+  height: .2rem;
+  background-color: #000000;
+  margin: 3px 0;
+  transition: 0.4s;
+  color: #000000;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.menu-toggle {
+  display: flex;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #000000;
+  width: 100%;
+  padding: 10px;
+  color: #000000;
+}
+
+.menu.active {
+  display: flex;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 80%;
+}
+
+.slide img {
+  width: 100rem;
+}
+
+.prev-button,
+.next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* .prev-button {
+  left: 10px;
+} */
+
+.next-button {
+  right: 1rem;
+}
+
+.slider-containers {
+  position: relative;
+  margin-top: 3rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-dots {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 90%;
+  margin-right: 15rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  right: 0;
+  width: 1rem;
+  height: 10px;
+  background-color: #888;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  /* Add your dot styles here */
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+
+.overlay {
+  /* position: absolute; */
+  top: 40%;
+  width: 100%;
+  height: 13%;
+}
+
+.overlay .blue {
+  position: absolute;
+  top: 16rem;
+  background-color: #1c3b9a;
+  left: 0;
+  width: 45rem;
+  height: 4rem;
+  padding-top: 2%;
+  color: #ffff;
+  text-align: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.overlay .black {
+  position: absolute;
+  top: 16rem;
+  z-index: -1;
+  right: 0px;
+  width: 45rem;
+  height: 4rem;
+  padding-top: 2%;
+  background-color: #010101;
+}
+
+.overlay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.text {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.signs {
+  max-width: 73%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  /* margin-left: 12rem; */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.content .card-s {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* max-width: 75%; */
+  /* margin: 0 auto; */
+}
+
+.content {
+    width: calc(33.33% - 2rem);
+}
+
+.content .small-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  /* width: 100%; */
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #041625;
+  padding: 20px 0 2rem 17px;
+}
+
+.card i {
+  color: #114c5d;
+  font-size: 40px;
+}
+
+.card h2 {
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.small-content .card-s {
+  width: calc(50% - 2rem);
+  height: 2rem;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #243799;
+  padding: 1rem 0 0 1rem;
+}
+
+.small-content h2 {
+  font-size: .8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #ffff;
+}
+
+.card-s i {
+  color: #23aed4;
+  font-size: 1rem;
+  padding-right: 5px;
+}
+
+.small-cards {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .slide img {
+    height: 25rem;
+  }
+  .carousel-dots {
+    margin-right: 7rem;
+    margin-top: .5rem;
+  }
+  .overlay .blue {
+    top: 10.5rem;
+    width: 15rem;
+    height: 3rem;
+    padding-top: 4%;
+    font-size: 0.7rem;
+  }
+
+  .overlay .black {
+    padding-top: 4%;
+    top: 10.5rem;
+    width: 13rem;
+    height: 3rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+
+  .signs {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .content {
+    width: calc(80% - 2rem);
+    margin: 0 auto;
+}
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .card i {
+    font-size: 2rem;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .small-content h2 {
+    font-size: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #ffff;
+    padding-top: 0.6rem;
+  }
+
+  .card-s i {
+    color: #23aed4;
+    font-size: .7rem;
+    padding-right: 5px;
+    padding-top: 0.5rem;
+    font-weight: 100;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .slide img {
+    height: 35rem;
+  }
+  .carousel-dots {
+    margin-right: 7rem;
+    margin-top: 1.5rem;
+  }
+    .overlay .blue {
+        top: 15rem;
+        width: 400px;
+        height: 60px;
+        padding-top: 3.5%;
+        font-size: 1rem;
+      }
+
+      .overlay .black {
+        top: 15rem;
+        padding-top: 3.5%;
+      }
+
+      .text {
+        font-size: 1rem;
+      }
+    
+      .signs {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    
+      .card i {
+        font-size: 1.7rem;
+      }
+    
+      .card h2 {
+        font-size: 1rem;
+      }
+      
+      .small-content .card-s {
+        width: calc(50% - 20px);
+        height: 2rem;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        overflow: hidden;
+        background-color: #243799;
+        padding: 0 0 0 15px;
+      }
+    
+      .small-content h2 {
+        font-size: 0.3rem;
+        padding-top: 0.6rem;
+      }
+    
+      .small-content .card-s i {
+        font-size: .4rem;
+        padding-right: 5px;
+        padding-top: 0.6rem;
+        font-weight: 100;
+      }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .overlay .blue {
+    top: 16rem;
+    width: 500px;
+    padding-top: 3.5%;
+    font-size: 1rem;
+  }
+
+  .overlay .black {
+    padding-top: 3.5%;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .signs {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .card i {
+    font-size: 1.7rem;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .small-content .card-s {
+    width: calc(50% - 20px);
+  }
+
+  .small-content h2 {
+    font-size: 0.4rem;
+    padding-top: 0.6rem;
+  }
+
+  .card-s i {
+    font-size: .5rem;
+    padding-right: 5px;
+    padding-top: 0.6rem;
+  }
+ }
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    .overlay .blue {
+        top: 16rem;
+        width: 500px;
+        padding-top: 3.5%;
+        font-size: 1rem;
+      }
+
+      .overlay .black {
+        padding-top: 3.5%;
+      }
+
+      .text {
+        font-size: 1rem;
+      }
+    
+      .signs {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    
+      .card i {
+        font-size: 1.7rem;
+      }
+    
+      .card h2 {
+        font-size: 1.3rem;
+      }
+    
+      .small-content .card-s {
+        width: calc(50% - 20px);
+      }
+    
+      .small-content h2 {
+        font-size: 0.4rem;
+        padding-top: 0.6rem;
+      }
+    
+      .card-s i {
+        font-size: .5rem;
+        padding-right: 5px;
+        padding-top: 0.6rem;
+      }
+}
