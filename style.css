@@ -148,7 +148,7 @@ nav {
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
-  /* Add your dot styles here */
+   
 }
 
 .dot.active {
@@ -214,6 +214,10 @@ nav {
   margin-top: 5rem;
   margin-bottom: 5rem;
   /* margin-left: 12rem; */
+}
+
+.sign img {
+  width: 25rem;
 }
 
 .cards {
@@ -290,8 +294,18 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  .logo img {
+    width: 5rem;
+  }
+  .bar {
+    width: 2rem;
+    height: .1rem;
+  }
   .slide img {
     height: 25rem;
+  }
+  .next-button {
+    right: 0rem;
   }
   .carousel-dots {
     margin-right: 7rem;
@@ -299,10 +313,10 @@ nav {
   }
   .overlay .blue {
     top: 10.5rem;
-    width: 15rem;
+    width: 10rem;
     height: 3rem;
     padding-top: 5%;
-    font-size: 0.7rem;
+    font-size: .8rem;
   }
 
   .overlay .black {
@@ -324,6 +338,10 @@ nav {
     justify-content: space-between;
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+
+  .sign img {
+    width: 15rem;
   }
 
   .content {
@@ -502,6 +520,10 @@ nav {
         justify-content: space-between;
         margin-top: 3rem;
         margin-bottom: 3rem;
+      }
+
+      .sign img {
+        width: 15rem;
       }
     
       .card i {
