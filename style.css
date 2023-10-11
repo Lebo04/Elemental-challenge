@@ -12,12 +12,19 @@ header {
   padding: 1rem 2rem;
   margin: 0 auto;
   width: 75%;
-  height: 8rem;
+  /* height: 2rem; */
+}
+
+.logo img {
+  margin-top: 1rem;
+  margin-bottom: -2rem;
 }
 
 nav {
   display: flex;
   align-items: center;
+  margin-bottom: -2rem;
+
 }
 
 .menu-toggle {
@@ -158,12 +165,12 @@ nav {
 
 .overlay .blue {
   position: absolute;
-  top: 16rem;
+  top: 17rem;
   background-color: #1c3b9a;
   left: 0;
   width: 45rem;
-  height: 4rem;
-  padding-top: 2%;
+  height: 3rem;
+  padding-top: 1rem;
   color: #ffff;
   text-align: center;
   justify-content: center;
@@ -174,12 +181,12 @@ nav {
 
 .overlay .black {
   position: absolute;
-  top: 16rem;
+  top: 17rem;
   z-index: -1;
   right: 0px;
   width: 45rem;
-  height: 4rem;
-  padding-top: 2%;
+  height: 3rem;
+  padding-top: 1rem;
   background-color: #010101;
 }
 
@@ -195,10 +202,11 @@ nav {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  /* font-size: .1rem; */
 }
 
 .signs {
-  max-width: 73%;
+  max-width: 75%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -256,12 +264,12 @@ nav {
 
 .small-content .card-s {
   width: calc(50% - 2rem);
-  height: 2rem;
+  height: 1.7rem;
   border: 1px solid #ccc;
   margin-bottom: 20px;
   overflow: hidden;
   background-color: #243799;
-  padding: 1rem 0 0 1rem;
+  padding: .2rem 0 0 .5rem;
 }
 
 .small-content h2 {
@@ -466,7 +474,7 @@ nav {
   .card-s i {
     font-size: .5rem;
     padding-right: 5px;
-    padding-top: 0.6rem;
+    padding-top: 0.1rem;
   }
  }
 
@@ -474,12 +482,12 @@ nav {
     .overlay .blue {
         top: 16rem;
         width: 500px;
-        padding-top: 3.5%;
+        padding-top: 2%;
         font-size: 1rem;
       }
 
       .overlay .black {
-        padding-top: 3.5%;
+        padding-top: 2%;
       }
 
       .text {
@@ -487,7 +495,7 @@ nav {
       }
     
       .signs {
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
